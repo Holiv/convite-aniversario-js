@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 html{
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'Francois One', sans-serif;
 }
 
@@ -30,7 +30,7 @@ html{
 
 #card{
     width: 85vw;
-    height: 85vh;
+    height: 90vh;
     background-color: #F7CB9E;
     z-index: 1; 
     display: flex;
@@ -70,14 +70,29 @@ html{
 #midle-message{
     width: 90%;
     height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #midle-message div{
     display: flex;
     align-items: center;
+    background-image: url(https://img.freepik.com/vetores-gratis/padrao-de-xadrez-sem-costura-tartan-escocia-tecido-de-fundo-retro-textura-geometrica-quadrada-de-cor-de-selecao-vintage-para-impressao-textil-papel-de-embrulho-cartao-de-presente-papel-de-parede_87543-4019.jpg?w=2000);
+    position: relative;
+    z-index: 1000;
+}
+#midle-message div::after{
+    content: '';
+    position: absolute;
+    background-color: #F7CB9E;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 #midle-message div:first-child{
     width: 100%;
-    height: 70%;
+    height: 60%;
     text-align: justify;
 }
 #midle-message div:nth-child(2){
@@ -91,21 +106,23 @@ html{
 #idade{
     display: flex;
     justify-content: center;
+    
 }
-#idade span{
-    color: #ec3f45;
-    font-size: 1.8rem;
+#idade p{
+    color: #EFB935;
+    filter: drop-shadow(3px 3px 2px #F04D1D);
+    font-size: 2.4rem;
     line-height: 1.8rem;
 }
 #idade #laiz-2{
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     padding: 0 10px;
     border-right: 2px solid #F04D1D;
 }
 
 #text{
     font-size: 1.2rem;
-    color: #FF7900;
+    color: #ec3f45;
     /*border-bottom: 1px solid #299DAF;*/
     
 }
